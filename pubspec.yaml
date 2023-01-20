@@ -8,18 +8,20 @@ environment:
   sdk: '>=2.4.0 <3.0.0'
 
 # TODO(tek08): I don't have control of pub.dev for these packages, so for now,
-#   folks can depend on them path-wise, as I have done here.  Each of mmcc007's
-#   projects should be cloned into the same parent directory as this project.
+#   either folks can depend on them path-wise, or can point to my git repos.
+#   If you do path-wise: each of mmcc007's projects should be cloned into the
+#   same parent directory as this project.
 
 dependencies:
   process: ^4.2.4
 #  tool_base: ^1.9.5+3
   tool_base:
-    path: ../tool_base
+    git: https://github.com/tek08/tool_base.git
+#    path: ../tool_base
   mockito: ^5.3.2
   test: ^1.22.2
 dev_dependencies:
   pedantic: ^1.7.0
   tool_base_test:
-#    git: https://github.com/mmcc007/tool_base_test.git
-    path: ../tool_base_test
+    git: https://github.com/tek08/tool_base_test.git
+#    path: ../tool_base_test
